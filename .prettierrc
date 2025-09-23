@@ -1,3 +1,7 @@
 {
-    "printWidth": 100
+    "printWidth": 50,
+    "semi": true,
+    "endOfLine": "auto",
+    "tabWidth": 4,
+    "arrowParens": "avoid"
 }
