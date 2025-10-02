@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -17,17 +17,19 @@
         </div>
         <script>
             const buttonPlay = document.getElementById("play");
-            buttonPlay.addEventListener("click", (e) => {
+            buttonPlay.addEventListener("click", e => {
                 console.log(e);
-                
-                if (e.defaultPrevented) return
-                
-                alert("otro evento play desde addEventListener " + e.defaultPrevented);
 
+                if (e.defaultPrevented) return;
+
+                alert(
+                    "otro evento play desde addEventListener " +
+                        e.defaultPrevented,
+                );
             });
             buttonPlay.addEventListener("click", e => {
                 e.stopPropagation();
-                e.preventDefault()
+                e.preventDefault();
                 alert("play desde addEventListener");
             });
         </script>
