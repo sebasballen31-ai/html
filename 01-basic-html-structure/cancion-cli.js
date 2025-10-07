@@ -6,7 +6,7 @@ const sleep = ms =>
     });
 
 const cancion = async () => {
-    const addLyrics = text => (console.log(text));
+    const addLyrics = text => console.log(text);
 
     addLyrics("mi primera cancion en j.s");
 
