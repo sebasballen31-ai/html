@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Document</title>
@@ -14,50 +14,62 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"
         ></script>
-        
-  <style>
-    body {
-      background-color: #f0f8ff;
-      font-family: "Poppins", sans-serif;
-    }
 
-    table {
-      border-collapse: collapse;
-      width: 80%;
-      margin: 50px auto;
-      background: linear-gradient(to right, #b3e5fc, #e1f5fe);
-      font-size: 60px;
-      font-weight: bold;
-      color: #0b72e7;
-      text-align: center;
-      border-radius: 25px;
-      overflow: hidden;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-    }
+        <style>
+            body {
+                background-color: #f0f8ff;
+                font-family: "Poppins", sans-serif;
+            }
 
-    th, td {
-      border: 3px solid rgba(15, 181, 241, 0.5);
-      padding: 30px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
+            .index table {
+                border-collapse: collapse;
+                width: 80%;
+                margin: 50px auto;
+                background: linear-gradient(to right, #b3e5fc, #e1f5fe);
+                font-size: 20px;
+                font-weight: bold;
+                color: #0b72e7;
+                text-align: center;
+                border-radius: 25px;
+                overflow: hidden;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+            }
 
-    /* Efecto cuando pasas el mouse */
-    td:hover, th:hover {
-      background-color: #0e76ed;
-      color: rgb(60, 230, 14);
-      transform: scale(1.05);
-      box-shadow: inset 0 0 10px rgba(221, 214, 214, 0.6);
-    }
+            .index th,
+            .index td {
+                border: 3px solid rgba(15, 181, 241, 0.5);
+                padding: 15px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
 
-    /* Efecto cuando haces clic */
-    td:active, th:active {
-      background-color: #16e9f8;
-      transform: scale(0.98);
-    }
-  </style>
+            /* Efecto cuando pasas el mouse */
+            .index td:hover,
+            .index th:hover {
+                background-color: #0e76ed;
+                color: rgb(60, 230, 14);
+                transform: scale(1.05);
+                box-shadow: inset 0 0 10px rgba(221, 214, 214, 0.6);
+            }
+
+            .index a {
+               color: inherit; 
+            }
+
+            /* Efecto cuando haces clic */
+            .index td:active,
+            .index th:active {
+                background-color: #16e9f8;
+                transform: scale(0.98);
+            }
+
+            .index a {
+                text-decoration: none;
+            }
+        </style>
     </head>
+
     <body>
         <!-- Barra de navegacion -->
         <ul class="nav nav-pills">
@@ -90,7 +102,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="/06-forms/fms.html">forms </a>
             </li>
-            
+
             <li class="nav-item">
                 <a
                     class="nav-link"
@@ -102,79 +114,72 @@
             </li>
         </ul>
         <!-- =================== -->
-        <div>
-        <table>
-            <tr>
-            <th>Archivos del proyecto</th>
-            </tr>
-            <tr>
-            <th>index.html</th>
-            </tr>
-            <tr>
-            <th>styles.css</th>
-            </tr>
-            <tr>                    
-            <th>script.js</th>
-            </tr>
-            <th>notes.md</th>
-            </tr>
-            <tr>
-            <th>README.md</th>
-            </tr>
-            <tr>
-            <th>
-                <a class="nav-link" href="/01-basic-html-structure/index.html">
-                    Basic HTML structure
-                </a>
-            </th>
-            </tr>
-            <tr>
-            <th>
-                <a class="nav-link" href="/02-text-formatting-tags/index.html">
-                    Text formatting tags
-                </a>
-            </th>
-            </tr>
-            <tr> 
-            <th>
-                <a class="nav-link" href="/03-lists-and-links/index.html">
-                    List and links
-                </a>
-            </th>
-            </tr>
-            <tr>
-           <th>
-                <a class="nav-link" href="/04-images-and-multimedia/img.html">
-                    Images and Multimedia
-                </a>
-            </th>
-            </tr>
-            <tr>
-            <th>
-                <a class="nav-link" href="/05-tables/tabl.html">Tables 
-
-                </a>
-            </th>
-            </tr>
-            <tr>
-            <th>
-                <a class="nav-link" href="/06-forms/fms.html">forms 
-
-                </a>
-            </th>
-            </tr>
-            <tr>
-            <th>
-                <a
-                    class="nav-link"
-                    class="nav-link"
-                    href="/08-basic-web-page-project/"
-                >
-                    Basic web page
-                </a>
-            </th>
-            </tr>
-        </table> 
-        
+        <div class="index">
+            <table>
+                <tr>
+                    <th>Archivos del proyecto</th>
+                </tr>
+                <tr>
+                    <th>index.html</th>
+                </tr>
+                <tr>
+                    <th>styles.css</th>
+                </tr>
+                <tr>
+                    <th>script.js</th>
+                </tr>
+                <tr>
+                    <th>notes.md</th>
+                </tr>
+                <tr>
+                    <th>README.md</th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="/01-basic-html-structure/index.html">
+                            Basic HTML structure
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="/02-text-formatting-tags/index.html">
+                            Text formatting tags
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="/03-lists-and-links/index.html">
+                            List and links
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="/04-images-and-multimedia/img.html">
+                            Images and Multimedia
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="/05-tables/tabl.html">Tables </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="/06-forms/fms.html">forms </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="/08-basic-web-page-project/">
+                            Basic web page
+                        </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
