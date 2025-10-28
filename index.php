@@ -3,17 +3,8 @@
     <head>
         <title>Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
+        
+        <?php include 'templates/assets.php'; ?>
 
         <style>
             body {
@@ -71,49 +62,7 @@
     </head>
 
     <body>
-        <!-- Barra de navegacion -->
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active" href="/index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/01-basic-html-structure/index.html">
-                    Basic HTML structure
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/02-text-formatting-tags/index.html">
-                    Text formatting tags
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/03-lists-and-links/index.html">
-                    List and links
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/04-images-and-multimedia/img.html">
-                    Images and Multimedia
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/05-tables/tabl.html">Tables </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/06-forms/fms.html">forms </a>
-            </li>
-
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    class="nav-link"
-                    href="/08-basic-web-page-project/"
-                >
-                    Basic web page
-                </a>
-            </li>
-        </ul>
-        <!-- =================== -->
+        <?php include 'templates/header.php'; ?>
         <div class="index">
             <table>
                 <tr>
@@ -136,40 +85,40 @@
                 </tr>
                 <tr>
                     <th>
-                        <a href="/01-basic-html-structure/index.html">
+                        <a href="/01-basic-html-structure/index.php">
                             Basic HTML structure
                         </a>
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/02-text-formatting-tags/index.html">
+                        <a href="/02-text-formatting-tags/index.php">
                             Text formatting tags
                         </a>
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/03-lists-and-links/index.html">
+                        <a href="/03-lists-and-links/index.php">
                             List and links
                         </a>
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/04-images-and-multimedia/img.html">
+                        <a href="/04-images-and-multimedia/img.php">
                             Images and Multimedia
                         </a>
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/05-tables/tabl.html">Tables </a>
+                        <a href="/05-tables/tabl.php">Tables </a>
                     </th>
                 </tr>
                 <tr>
                     <th>
-                        <a href="/06-forms/fms.html">forms </a>
+                        <a href="/06-forms/fms.php">forms </a>
                     </th>
                 </tr>
                 <tr>

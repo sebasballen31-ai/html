@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <?php include '../templates/assets.php';?>
+    </head>
+    <body>
+        <?php include '../templates/header.php';?>
+        <h1 id="letra">hola</h1>
+        <script src="cancion.js"></script>
+    </body>
+</html>
