@@ -28,5 +28,6 @@
         <p>Se agregó la palabra <ins>nueva</ins>.</p>
         <div>H<sup>2</sup>O</div>
         <div>CO<sub>2</sub></div>
+        <?php include '../templates/footer.php';?>
     </body>
 </html>

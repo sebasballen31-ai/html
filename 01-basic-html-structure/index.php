@@ -10,5 +10,6 @@
         <?php include '../templates/header.php';?>
         <h1 id="letra">hola</h1>
         <script src="cancion.js"></script>
+         <?php include '../templates/footer.php';?>
     </body>
 </html>

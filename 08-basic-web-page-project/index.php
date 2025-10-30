@@ -33,5 +33,6 @@
                 alert("play desde addEventListener");
             });
         </script>
+         <?php include '../templates/footer.php';?>
     </body>
 </html>

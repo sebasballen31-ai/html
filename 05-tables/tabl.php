@@ -82,5 +82,6 @@
             no entender aun lo de border="1"y tambien lo de colspan y de rowspan
             que son atributos
         </p>
+         <?php include '../templates/footer.php';?>
     </body>
 </html>

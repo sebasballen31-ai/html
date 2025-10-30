@@ -41,5 +41,6 @@
 
         <h2 id="contacto">Sección de contacto</h2>
         <p>mi correo es:sebasballen31@gmail.com</p>
+         <?php include '../templates/footer.php';?>
     </body>
 </html>

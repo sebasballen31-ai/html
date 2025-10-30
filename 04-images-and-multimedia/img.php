@@ -33,5 +33,6 @@
                 Tu navegador no soporta video.
             </video>
         </div>
+         <?php include '../templates/footer.php';?>
     </body>
 </html>
