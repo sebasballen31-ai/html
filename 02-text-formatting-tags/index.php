@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Documento Base</title>
-        <?php include '../templates/assets.php';?>
+        <?php include "../templates/assets.php"; ?>
     </head>
     <body>
-        <?php include '../templates/header.php';?>
+        <?php include "../templates/header.php"; ?>
         <h1 id="letra">hola</h1>
         <script src="cancion.js"></script>
         <p>este es un parrafo en html</p>
@@ -28,6 +28,6 @@
         <p>Se agregó la palabra <ins>nueva</ins>.</p>
         <div>H<sup>2</sup>O</div>
         <div>CO<sub>2</sub></div>
-        <?php include '../templates/footer.php';?>
+        <?php include "../templates/footer.php"; ?>
     </body>
 </html>

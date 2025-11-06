@@ -5,11 +5,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Documento Base</title>
-        <?php include '../templates/assets.php'; ?>
+        <?php include "../templates/assets.php"; ?>
 
     </head>
     <body>
-        <?php include '../templates/header.php';?>
+        <?php include "../templates/header.php"; ?>
 
         <div style="display: flex; flex-direction: column; align-items: center">
             <h1 id="letra">Imagenes muchas pro</h1>
@@ -33,6 +33,6 @@
                 Tu navegador no soporta video.
             </video>
         </div>
-         <?php include '../templates/footer.php';?>
+         <?php include "../templates/footer.php"; ?>
     </body>
 </html>

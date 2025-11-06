@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <title>Document</title>
-        <?php include '../templates/assets.php'; ?>
+        <?php include "../templates/assets.php"; ?>
     </head>
     <body>
-        <?php include '../templates/header.php';?>
+        <?php include "../templates/header.php"; ?>
         <div onclick="alert('click en e div')">
-            <button id="play">play</button>
+                         <button id="play">play</button>
             <button
                 id="pause"
                 onclick="event.stopPropagation(); alert('click en el boton pause')"
@@ -33,6 +33,6 @@
                 alert("play desde addEventListener");
             });
         </script>
-         <?php include '../templates/footer.php';?>
+         <?php include "../templates/footer.php"; ?>
     </body>
 </html>

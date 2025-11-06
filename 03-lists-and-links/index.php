@@ -5,10 +5,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Documento Base</title>
-        <?php include '../templates/assets.php'; ?>
+        <?php include "../templates/assets.php"; ?>
     </head>
     <body> 
-        <?php include '../templates/header.php';?>
+        <?php include "../templates/header.php"; ?>
         <h1 id="letra">hola</h1>
         <script src="cancion.js"></script>
         <ul>
@@ -41,6 +41,6 @@
 
         <h2 id="contacto">Sección de contacto</h2>
         <p>mi correo es:sebasballen31@gmail.com</p>
-         <?php include '../templates/footer.php';?>
+         <?php include "../templates/footer.php"; ?>
     </body>
 </html>

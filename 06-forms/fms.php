@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <title>formularios</title>
-        <?php include '../templates/assets.php'; ?>
+        <?php include "../templates/assets.php"; ?>
 
     </head>
 
     <body>
-        <?php include '../templates/header.php';?>
+        <?php include "../templates/header.php"; ?>
 
         <div class="container">
             <form action="/procesar" method="post">
@@ -87,6 +87,6 @@
                 </select>
             </div>
         </div>
-         <?php include '../templates/footer.php';?>
+         <?php include "../templates/footer.php"; ?>
     </body>
 </html>

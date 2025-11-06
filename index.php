@@ -4,7 +4,7 @@
         <title>Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <?php include 'templates/assets.php'; ?>
+        <?php include "templates/assets.php"; ?>
 
         <style>
             body {
@@ -62,7 +62,7 @@
     </head>
 
     <body>
-        <?php include 'templates/header.php'; ?>
+        <?php include "templates/header.php"; ?>
         <div class="index">
             <table>
                 <tr>
@@ -130,6 +130,6 @@
                 </tr>
             </table>
         </div>
-         <?php include 'templates/footer.php';?>
+         <?php include "templates/footer.php"; ?>
     </body>
 </html>

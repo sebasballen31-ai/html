@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
         <title>Document</title>
-        <?php include '../templates/assets.php'; ?>
+        <?php include "../templates/assets.php"; ?>
 
     </head>
     <body>
-        <?php include '../templates/header.php';?>
+        <?php include "../templates/header.php"; ?>
 
         <h1 id="letra">EJ:tablas</h1>
         <script src="cancion.js"></script>
@@ -82,6 +82,6 @@
             no entender aun lo de border="1"y tambien lo de colspan y de rowspan
             que son atributos
         </p>
-         <?php include '../templates/footer.php';?>
+         <?php include "../templates/footer.php"; ?>
     </body>
 </html>
