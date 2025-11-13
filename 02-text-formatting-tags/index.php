@@ -9,6 +9,9 @@
     <body>
         <?php include "../templates/header.php"; ?>
         <h1 id="letra">hola</h1>
+        <h6>
+            <?= $_REQUEST['search'] ?>
+        </h6>
         <script src="cancion.js"></script>
         <p>este es un parrafo en html</p>
         <h1>Titulo</h1>

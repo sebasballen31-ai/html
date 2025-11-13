@@ -33,7 +33,7 @@
                         class="form-control"
                     />
                 </div>
-                <button type="button" class="btn btn-sm btn-primary w-50">
+                <button type="submit" class="btn btn-sm btn-primary w-50">
                     Enviar
                 </button>
             </form>

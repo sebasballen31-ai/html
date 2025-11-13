@@ -70,7 +70,7 @@
       gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
       ctx.beginPath();
       ctx.fillStyle = gradient;
-      ctx.ellipse(baseX, baseY + 600, 220, 40, 0, 0, Math.PI * 2);
+      ctx.ellipse(baseX, baseY + 200, 10, 40, 0, 0, Math.PI * 2);
       ctx.fill();
     }
 
@@ -86,7 +86,7 @@
         glow.addColorStop(1, 'rgba(0, 0, 50, 0)');
         ctx.fillStyle = glow;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size * scale, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, p.size * scale, 0, Math.PI * 1);
         ctx.fill();
 
         // movimiento suave en “3D”
