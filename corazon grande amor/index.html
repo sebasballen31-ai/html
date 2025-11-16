@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Corazón Infinito - Sebastián Ballen 💙</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: radial-gradient(ellipse at center, #000010 0%, #000000 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    h1 {
+      position: absolute;
+      top: 40px;
+      color: #6dbaff;
+      font-family: "Brush Script MT", cursive;
+      font-size: 60px;
+      text-shadow: 0 0 25px #6dbaff, 0 0 50px #0084ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>sebastian💙</h1>
+  <canvas id="heart"></canvas>
+
+  <script>
+    const canvas = document.getElementById('heart');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const baseX = canvas.width / 2;
+    const baseY = canvas.height / 2;
+    const numParticles = 3500;
+    const depth = 200;
+    const particles = [];
+    const fallingHearts = [];
+
+    function heartShape(t) {
+      const x = 16 * Math.pow(Math.sin(t), 3);
+      const y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+      return {x, y};
+    }
+
+    for (let i = 0; i < numParticles; i++) {
+      const t = Math.random() * Math.PI * 2;
+      const pos = heartShape(t);
+      particles.push({
+        x: pos.x * 10 + (Math.random() - 0.5) * 15,
+        y: pos.y * 10 + (Math.random() - 0.5) * 15,
+        z: (Math.random() - 0.5) * depth,
+        size: Math.random() * 2 + 1,
+        alpha: Math.random(),
+        offset: Math.random() * 100
+      });
+    }
+
+    let angleY = 0;
+
+    // Base luminosa
+    function drawGlowBase() {
+      const gradient = ctx.createRadialGradient(baseX, baseY + 220, 10, baseX, baseY + 220, 250);
+      gradient.addColorStop(0, "rgba(0, 153, 255, 0.8)");
+      gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+      ctx.beginPath();
+      ctx.fillStyle = gradient;
+      ctx.ellipse(baseX, baseY + 220, 130, 45, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Corazón luminoso grande debajo del texto
+      ctx.save();
+      ctx.translate(baseX, baseY + 10);
+      ctx.scale(12, 12);
+      ctx.beginPath();
+      ctx.moveTo(10, 0);
+      for (let t = 0; t < Math.PI * 2; t += 0.02) {
+        const {x, y} = heartShape(t);
+        ctx.lineTo(x, -y);
+      }
+      ctx.closePath();
+      const heartGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, 15);
+      heartGrad.addColorStop(0, "rgba(0, 153, 255, 0.7)");
+      heartGrad.addColorStop(1, "rgba(0, 0, 50, 0)");
+      ctx.fillStyle = heartGrad;
+      ctx.fill();
+      ctx.restore();
+    }
+
+    // Lluvia de "Te amo"
+    function createFallingHeart() {
+      fallingHearts.push({
+        x: Math.random() * canvas.width,
+        y: -20,
+        size: Math.random() * 18 + 10,
+        speed: Math.random() * 2 + 1.5,
+        text: "💙 Te amo 💙",
+        alpha: Math.random() * 0.5 + 0.5
+      });
+    }
+
+    function drawFallingHearts() {
+      ctx.font = "bold 18px 'Brush Script MT', cursive";
+      for (let i = 0; i < fallingHearts.length; i++) {
+        const h = fallingHearts[i];
+        ctx.globalAlpha = h.alpha;
+        ctx.fillStyle = "rgba(0, 153, 255, 1)";
+        ctx.shadowBlur = 20;
+        ctx.shadowColor = "#00aaff";
+        ctx.fillText(h.text, h.x, h.y);
+        h.y += h.speed;
+
+        if (h.y > canvas.height + 50) {
+          h.y = -20;
+          h.x = Math.random() * canvas.width;
+        }
+      }
+      // Más corazones
+      if (fallingHearts.length < 150) createFallingHeart();
+      ctx.globalAlpha = 1;
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawGlowBase();
+      drawFallingHearts();
+
+      angleY += 0.01;
+      for (let p of particles) {
+        const x3d = p.x * Math.cos(angleY) - p.z * Math.sin(angleY);
+        const z3d = p.x * Math.sin(angleY) + p.z * Math.cos(angleY);
+        const y3d = p.y;
+
+        const scale = depth / (depth + z3d);
+        const pulse = Math.sin(Date.now() * 0.003 + p.offset) * 0.4 + 1.2;
+        const x2d = baseX + x3d * scale * 4;
+        const y2d = baseY - y3d * scale * 4;
+
+        const glow = ctx.createRadialGradient(x2d, y2d, 0, x2d, y2d, 8);
+        glow.addColorStop(0, `rgba(0, 153, 255, ${p.alpha})`);
+        glow.addColorStop(1, 'rgba(0, 0, 40, 0)');
+        ctx.fillStyle = glow;
+        ctx.beginPath();
+        ctx.arc(x2d, y2d, p.size * scale * pulse, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
