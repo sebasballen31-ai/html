@@ -2,63 +2,12 @@
 <html lang="en">
     <head>
         <title>Document</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
+        <?php include "../templates/assets.php"; ?>
+
     </head>
     <body>
-        <!-- Barra de navegacion -->
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link " href="/index.html"> Home </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/01-basic-html-structure/index.html">
-                    Basic HTML structure
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/02-text-formatting-tags/index.html">
-                    Text formatting tags
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/03-lists-and-links/index.html">
-                    List and links
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/04-images-and-multimedia/img.html">
-                    Images and Multimedia
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="/05-tables/tabl.html"
-                    >Tables
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/06-forms/fms.html">forms </a>
-            </li>
-            <li class="nav-item">
-                <a
-                    class="nav-link"
-                    class="nav-link"
-                    href="/08-basic-web-page-project/"
-                >
-                    Basic web page
-                </a>
-            </li>
-        </ul>
-        <!-- =================== -->
+        <?php include "../templates/header.php"; ?>
+
         <h1 id="letra">EJ:tablas</h1>
         <script src="cancion.js"></script>
         <p>ej: tabla con nombres y fondo</p>
@@ -133,5 +82,6 @@
             no entender aun lo de border="1"y tambien lo de colspan y de rowspan
             que son atributos
         </p>
+         <?php include "../templates/footer.php"; ?>
     </body>
 </html>
