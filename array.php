@@ -26,5 +26,10 @@ $users = [
     <br>
     <?= 'Nombre: ' . $users[1]['name'] ?>
     <?= 'Genero: ' . $users[1]['gender'] ?>
+
+    <?php foreach($users as $user): ?>
+        <?= 'Nombre: ' . $user['name'] ?>
+        <?= 'Genero: ' . $user['gender'] ?>
+    <?php endforeach; ?>
 </body>
 </html>
