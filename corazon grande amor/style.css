@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #000010 0%, #000000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  position: absolute;
+  top: 40px;
+  color: #6dbaff;
+  font-family: "Brush Script MT", cursive;
+  font-size: 60px;
+  text-shadow: 0 0 20px #6dbaff, 0 0 40px #006eff;
+  z-index: 3;
+}
+
+#heartCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+#teAmoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.teAmo {
+  position: absolute;
+  color: #6dbaff;
+  font-family: "Brush Script MT", cursive;
+  font-size: 28px;
+  animation: fall linear forwards;
+  text-shadow: 0 0 10px #00aaff, 0 0 30px #006eff;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
